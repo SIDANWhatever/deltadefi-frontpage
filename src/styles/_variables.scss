@@ -1,0 +1,77 @@
+$baseFontSize: 14;
+
+@function convertPxToRem($size, $base: $baseFontSize) {
+  @return #{$size / $base}rem;
+}
+
+$color: (
+  blue950Color: #002742,
+  blue900Color: #0044a3,
+  blue800Color: #0062c2,
+  blue700Color: #0173d4,
+  blue600Color: #0285e7,
+  blue500Color: #0093f5,
+  blue400Color: #37a2f7,
+  blue300Color: #5eb3f7,
+  blue200Color: #8dc8fa,
+  blue100Color: #b9ddfc,
+  blue050Color: #e2f2fd,
+  orange900Color: #e55c2a,
+  orange800Color: #f1742d,
+  orange700Color: #f8822f,
+  orange600Color: #ff9232,
+  orange500Color: #ff9d35,
+  orange400Color: #ffab44,
+  orange300Color: #ffba60,
+  orange200Color: #ffce8c,
+  orange100Color: #ffe1b9,
+  orange050Color: #fff4e3,
+  whiteColor: #fff,
+  blackColor: #000,
+  redColor: #fb5555,
+  greenColor: #00e19e,
+  darkGreyColor: #9d9d9d,
+  greyColor: #e9e9e9,
+  whiteSmokeColor: #f5f5f5,
+  tundoraColor: #434343,
+  silverColor: #c4c4c4
+);
+
+$fontSize: (
+  baseFontSize: $baseFontSize,
+  h1FontSize: convertPxToRem(96),
+  h2FontSize: convertPxToRem(60),
+  h3FontSize: convertPxToRem(48),
+  h4FontSize: convertPxToRem(36),
+  h5FontSize: convertPxToRem(24),
+  h6FontSize: convertPxToRem(18)
+);
+
+$fontWeight: (
+  h1FontWeight: 300,
+  h2FontWeight: 300,
+  h3FontWeight: 500,
+  h4FontWeight: 500,
+  h5FontWeight: 700,
+  h6FontWeight: 700
+);
+
+$mainColor: (
+  primary: map-get($color, 'blue500Color'),
+  secondary: map-get($color, 'orange500Color'),
+  borderColor: map-get($color, 'darkGreyColor'),
+  errorColor: map-get($color, 'redColor'),
+  successColor: map-get($color, 'greenColor'),
+  remarksColor: map-get($color, 'darkGreyColor'),
+  labelColor: map-get($color, 'darkGreyColor'),
+  disabledBackgroundColor: map-get($color, 'greyColor'),
+  disabledTextColor: map-get($color, 'darkGreyColor'),
+  descriptionColor: map-get($color, 'tundoraColor'),
+  disabledButtonBackgroundColor: map-get($color, 'blue100Color'),
+  disabledButtonTextColor: map-get($color, 'whiteColor')
+);
+
+$mainStyle: (
+  borderRadius: 4px,
+  padding: 9px 8px
+);

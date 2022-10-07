@@ -38,4 +38,5 @@ yarn start
 ```
 yarn test
 ```
+
 # nextjs-boilerplate
