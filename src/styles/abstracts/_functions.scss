@@ -17,14 +17,17 @@
 @mixin linkItem {
   @include flexCenter;
   margin: 0.5rem;
-  padding: 0.75rem;
-  height: 2.5rem;
+  padding: 0.5rem;
+  height: 2rem;
   border-radius: 50px;
   color: $textPrimary;
+  font-size: 15px;
+  font-weight: 400;
 }
 
 @mixin linkButton {
   color: $textSecondary;
   font-weight: light;
   background-color: $bgPrimary;
+  padding: 1rem;
 }

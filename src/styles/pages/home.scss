@@ -44,8 +44,9 @@
 @media only screen and (max-width: 800px) {
   .landing {
     .box {
-      margin-left: 25px;
+      margin-left: 35px;
       width: 80%;
+      height: 30%;
     }
     .largeWord {
       font-size: 35px;
@@ -78,8 +79,9 @@
 @media only screen and (min-width: 800px) {
   .landing {
     .box {
-      margin-left: 50px;
+      margin-left: 100px;
       width: 600px;
+      height: 70%;
     }
     .largeWord {
       font-size: 50px;
@@ -128,7 +130,6 @@
   flex-direction: column-reverse;
 
   .box {
-    height: 55%;
     min-width: 300px;
     display: flex;
     flex-direction: column;
@@ -184,7 +185,7 @@
 /* Basic Intro Session */
 
 .intro {
-  background: url(~/src/assets/BasicIntro/BasicIntroBG.jpg);
+  background: $pageBgFirst;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

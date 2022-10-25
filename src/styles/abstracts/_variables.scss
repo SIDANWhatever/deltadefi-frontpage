@@ -79,7 +79,7 @@ $mainColor: (
 );
 
 $textPrimary: #282c34;
-$textSecondary: aquamarine;
+$textSecondary: white;
 $textSecondaryLight: rgb(192, 255, 233);
 $bgPrimary: #282c34;
 $bgPrimaryLight: #424a5a;
@@ -87,11 +87,15 @@ $bgPrimaryTpCover: rgba(40, 44, 52, 0.5);
 $bgPrimaryTp: rgba(40, 44, 52, 0.8);
 $bgPrimaryTpLight: rgba(66, 74, 90, 0.8);
 $bgSecondary: white;
+$bgSecondaryLight: rgba(192, 255, 233, 0.3);
 $transitionSpeed: 600ms;
 $titleSize: 40px;
 $middleTitleSize: 30px;
 $postSize: 22px;
 $contentSize: 15px;
+$pageBgFirst: white;
+$pageBgSecond: #f8fadb;
+
 $landingWordShadow: 0 0 7px
     map-get(
       $map: $gradient,

@@ -55,7 +55,7 @@ a {
   }
 
   .item:first-child span {
-    padding: 1rem;
+    padding: 0.2rem;
     font-size: 25px;
     font-weight: bold;
   }
@@ -89,7 +89,7 @@ a {
     }
 
     .item:nth-child(2):hover {
-      background-color: $bgPrimaryLight;
+      background-color: $bgSecondaryLight;
       transition: ease-in-out $transitionSpeed;
     }
 
@@ -125,9 +125,13 @@ a {
   }
 
   @media only screen and (min-width: 960px) {
+    .item:first-child {
+      margin-left: 70px;
+    }
+
     .item:last-child {
       @include linkButton;
-      margin-right: 2rem;
+      margin-right: 100px;
     }
 
     .item:not(:first-child):not(:last-child):hover {
