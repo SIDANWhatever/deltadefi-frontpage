@@ -4,6 +4,13 @@ $baseFontSize: 14;
   @return #{$size / $base}rem;
 }
 
+$gradient: (
+  color1: #f8fadb,
+  color2: #cce8b5,
+  color3: #ebebeb,
+  color4: #f8fadb
+);
+
 $color: (
   blue950Color: #002742,
   blue900Color: #0044a3,
@@ -71,7 +78,32 @@ $mainColor: (
   disabledButtonTextColor: map-get($color, 'whiteColor')
 );
 
+$textPrimary: #282c34;
+$textSecondary: aquamarine;
+$textSecondaryLight: rgb(192, 255, 233);
+$bgPrimary: #282c34;
+$bgPrimaryLight: #424a5a;
+$bgPrimaryTpCover: rgba(40, 44, 52, 0.5);
+$bgPrimaryTp: rgba(40, 44, 52, 0.8);
+$bgPrimaryTpLight: rgba(66, 74, 90, 0.8);
+$bgSecondary: white;
+$transitionSpeed: 600ms;
+$titleSize: 40px;
+$middleTitleSize: 30px;
+$postSize: 22px;
+$contentSize: 15px;
+$landingWordShadow: 0 0 7px
+    map-get(
+      $map: $gradient,
+      $key: color2
+    ),
+  0 0 14px
+    map-get(
+      $map: $gradient,
+      $key: color1
+    );
+
 $mainStyle: (
-  borderRadius: 4px,
-  padding: 9px 8px
+  // borderRadius: 4px,
+  // padding: 9px 8px
 );

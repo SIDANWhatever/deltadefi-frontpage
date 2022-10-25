@@ -1,0 +1,141 @@
+@use './abstracts' as *;
+@use './pages' as *;
+// @import "abstracts/functions";
+
+// @import "themes/theme";
+// @import "pages/home";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+
+.nav {
+  position: absolute;
+  height: 5rem;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 100;
+
+  .icon {
+    display: flex;
+    width: 3rem;
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .item:first-child {
+    margin-right: auto;
+  }
+
+  .item:first-child span {
+    padding: 1rem;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .item {
+    @include linkItem;
+  }
+
+  .item:hover {
+    cursor: pointer;
+  }
+
+  @media only screen and (max-width: 960px) {
+    .item:nth-child(2) {
+      margin-right: 2rem;
+      border-radius: 0px;
+      height: 3rem;
+      width: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 2;
+    }
+
+    .menu-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+
+    .item:nth-child(2):hover {
+      background-color: $bgPrimaryLight;
+      transition: ease-in-out $transitionSpeed;
+    }
+
+    .menu-wrapper {
+      position: absolute;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      top: 5rem;
+    }
+
+    .menu-item {
+      width: 100%;
+      height: 3rem;
+      background-color: $bgPrimaryTp;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .menu-item:hover {
+      background-color: $bgPrimaryTpLight;
+      transition: ease-in-out $transitionSpeed;
+    }
+
+    .menu-cover {
+      width: 100%;
+      height: 5rem;
+      position: absolute;
+      background-color: $bgPrimaryTpCover;
+      z-index: 1;
+    }
+  }
+
+  @media only screen and (min-width: 960px) {
+    .item:last-child {
+      @include linkButton;
+      margin-right: 2rem;
+    }
+
+    .item:not(:first-child):not(:last-child):hover {
+      background-color: $textSecondaryLight;
+    }
+
+    .item:last-child:hover {
+      background-color: $bgPrimaryLight;
+    }
+  }
+}

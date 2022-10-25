@@ -1,7 +1,0 @@
-@mixin exportComponentLevelVariables($map) {
-  @each $key, $value in $map {
-    :export {
-      #{$key}: $value;
-    }
-  }
-}

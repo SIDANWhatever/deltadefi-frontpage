@@ -1,0 +1,30 @@
+@use './variables' as *;
+
+@mixin exportComponentLevelVariables($map) {
+  @each $key, $value in $map {
+    :export {
+      #{$key}: $value;
+    }
+  }
+}
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin linkItem {
+  @include flexCenter;
+  margin: 0.5rem;
+  padding: 0.75rem;
+  height: 2.5rem;
+  border-radius: 50px;
+  color: $textPrimary;
+}
+
+@mixin linkButton {
+  color: $textSecondary;
+  font-weight: light;
+  background-color: $bgPrimary;
+}
