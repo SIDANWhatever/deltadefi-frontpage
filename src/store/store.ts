@@ -1,5 +1,5 @@
 import config from '@src/config'
-import epics from '@src/epics'
+// import epics from '@src/epics'
 import reducers from '@src/reducers'
 import { configureStore } from '@reduxjs/toolkit'
 import {
@@ -36,7 +36,7 @@ const store = configureStore({
     }).concat(logger, epicMiddleware),
   devTools: NODE_ENV !== 'production'
 })
-epicMiddleware.run(epics)
+// epicMiddleware.run(epics)
 const persistor = persistStore(store)
 
 export default store
