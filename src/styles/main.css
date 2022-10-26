@@ -1,44 +1,3 @@
-.main {
-  min-height: 100vh;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  height: 200vh;
-  width: 100vw;
-  z-index: 0;
-}
-
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  justify-content: center;
-  align-items: center;
-  background: url(~/src/assets/Footer/FooterBG.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100%;
-  width: 100%;
-  color: #282c34;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.logo {
-  display: flex;
-  height: 3rem;
-  width: 3rem;
-  margin-left: 0.5rem;
-}
-
 @media only screen and (max-width: 800px) {
   .landing .box {
     margin-left: 35px;
@@ -216,6 +175,36 @@ a {
   box-sizing: border-box;
 }
 
+.main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  display: flex;
+  padding: 2rem 0;
+  justify-content: center;
+  align-items: center;
+  background: #282c34;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  height: 3rem;
+  width: 3rem;
+  margin-left: 0.5rem;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -237,10 +226,10 @@ a {
 }
 .nav .icon {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 3rem;
   height: 3rem;
-  align-items: center;
-  justify-content: center;
 }
 .nav .item:first-child {
   margin-right: auto;
@@ -266,21 +255,23 @@ a {
   cursor: pointer;
 }
 @media only screen and (max-width: 960px) {
+  .nav {
+    color: white;
+  }
   .nav .item:nth-child(2) {
-    margin-right: 2rem;
-    border-radius: 0px;
-    height: 3rem;
-    width: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 2rem;
+    height: 3rem;
+    width: 3rem;
     z-index: 2;
   }
   .nav .menu-icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 10%;
     height: 100%;
   }
   .nav .item:nth-child(2):hover {
@@ -295,12 +286,12 @@ a {
     top: 5rem;
   }
   .nav .menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 3rem;
     background-color: rgba(40, 44, 52, 0.8);
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
   .nav .menu-item:hover {
     background-color: rgba(66, 74, 90, 0.8);

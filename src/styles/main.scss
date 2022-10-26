@@ -22,6 +22,34 @@ a {
   box-sizing: border-box;
 }
 
+.main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  display: flex;
+  padding: 2rem 0;
+  justify-content: center;
+  align-items: center;
+  background: $bgPrimary;
+  background-size: cover;
+  background-position: center;
+  color: $textSecondary;
+}
+
+.footer a {
+  @include flexCenter;
+}
+
+.logo {
+  display: flex;
+  height: 3rem;
+  width: 3rem;
+  margin-left: 0.5rem;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -43,11 +71,9 @@ a {
   z-index: 100;
 
   .icon {
-    display: flex;
+    @include flexCenter;
     width: 3rem;
     height: 3rem;
-    align-items: center;
-    justify-content: center;
   }
 
   .item:first-child {
@@ -69,22 +95,19 @@ a {
   }
 
   @media only screen and (max-width: 960px) {
+    color: $textSecondary;
+
     .item:nth-child(2) {
+      @include flexCenter;
       margin-right: 2rem;
-      border-radius: 0px;
       height: 3rem;
       width: 3rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       z-index: 2;
     }
 
     .menu-icon {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
+      @include flexCenter;
+      width: 10%;
       height: 100%;
     }
 
@@ -102,12 +125,10 @@ a {
     }
 
     .menu-item {
+      @include flexCenter;
       width: 100%;
       height: 3rem;
       background-color: $bgPrimaryTp;
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
 
     .menu-item:hover {

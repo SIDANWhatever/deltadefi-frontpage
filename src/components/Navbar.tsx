@@ -38,7 +38,7 @@ const Navbar = () => {
   useEffect(() => {
     showButton()
     setListener()
-  })
+  }, [])
 
   return (
     <div className="nav">
