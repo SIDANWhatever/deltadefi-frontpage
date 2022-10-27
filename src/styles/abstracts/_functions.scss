@@ -8,26 +8,43 @@
   }
 }
 
+@mixin homePageBg {
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  display: flex;
+}
+
+@mixin fullBox {
+  width: 100%;
+  height: 100%;
+}
+
 @mixin flexCenter {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-@mixin linkItem {
+@mixin linkItem($size: 1) {
   @include flexCenter;
-  margin: 0.5rem;
-  padding: 0.5rem;
-  height: 2rem;
-  border-radius: 50px;
+  margin: 0.5rem * $size;
+  padding: 0.5rem * $size;
+  height: 2rem * $size;
+  border-radius: 50px * $size;
   color: $textPrimary;
-  font-size: 15px;
-  font-weight: 400;
+  font-size: 15px * $size;
+  font-weight: 400 * $size;
 }
 
-@mixin linkButton {
+@mixin linkButton($size: 1) {
   color: $textSecondary;
   font-weight: light;
   background-color: $bgPrimary;
-  padding: 1rem;
+  padding: 1rem * $size;
+}
+
+@mixin linkButtonHover {
+  background-color: $bgPrimaryLight;
+  cursor: pointer;
 }

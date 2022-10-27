@@ -1,0 +1,51 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/functions' as *;
+
+.pageHeader {
+  @include flexCenter;
+  color: $textPrimary;
+
+  .phContent {
+    width: 80%;
+  }
+
+  .pchContent {
+    @include flexCenter;
+    @include fullBox;
+    flex-direction: column;
+  }
+
+  .phLong {
+    margin: 0.5rem 0;
+  }
+
+  @media only screen and (min-width: 800px) {
+    margin-top: 4rem;
+    .phShort {
+      font-size: $headerS;
+      font-weight: 400;
+    }
+
+    .phLong {
+      font-size: $headerL;
+      font-weight: 400;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    margin-top: 2rem;
+    .phContent {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .phShort {
+      font-size: $footerSize;
+      font-weight: 400;
+    }
+
+    .phLong {
+      font-size: $phoneTitleSize;
+      font-weight: 400;
+    }
+  }
+}

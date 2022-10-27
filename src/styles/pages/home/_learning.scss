@@ -1,0 +1,114 @@
+@use '../../abstracts/' as *;
+
+.learning {
+  @include homePageBg;
+  display: flex;
+  flex-direction: column;
+  background-color: $pageBgSecond;
+
+  .box {
+    margin: 0 auto 25px auto;
+    width: 80%;
+    height: 100%;
+
+    .content {
+      @include fullBox;
+      @include flexCenter;
+      padding: 2rem;
+      display: flex;
+      color: $textPrimary;
+
+      .left {
+        flex: 1;
+        @include flexCenter;
+        flex-direction: column;
+
+        .smallTitle {
+          font-size: $descSize;
+          margin: 10px 0;
+        }
+        .smallDesc {
+          font-size: $descSize - 15px;
+          margin: 5px 0;
+        }
+        .description {
+          @include fullBox;
+          margin-top: 30px;
+          font-size: $descSize - 15px;
+          margin: 35px 0;
+        }
+
+        .item:first-child {
+          .demoPic {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin: 20px 0;
+          }
+
+          .imageBox {
+            @include flexCenter;
+            max-height: 10rem;
+            height: 10rem;
+            width: auto;
+          }
+
+          .imageBox:first-child {
+            width: 20rem;
+          }
+        }
+
+        .item:last-child {
+          display: flex;
+          @include fullBox;
+          .button {
+            @include linkItem;
+            @include linkButton;
+            width: 140px;
+          }
+          .button:hover {
+            @include linkButtonHover;
+          }
+        }
+      }
+
+      .right {
+        flex: 2;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 800px) {
+    .box {
+      margin-bottom: 40px;
+    }
+
+    .right {
+      @include flexCenter;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      .illustration {
+        width: 40vw;
+        height: 60vh;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 4px 8px 10px 0 rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .box {
+      margin-bottom: 30px;
+    }
+    .left {
+      font-size: $footerSize;
+    }
+
+    .right {
+      display: none;
+    }
+  }
+}

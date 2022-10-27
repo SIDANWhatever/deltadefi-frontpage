@@ -79,6 +79,7 @@ $mainColor: (
 );
 
 $textPrimary: #282c34;
+$textPrimaryLight: #6e7990;
 $textSecondary: white;
 $textSecondaryLight: rgb(192, 255, 233);
 $bgPrimary: #282c34;
@@ -89,12 +90,17 @@ $bgPrimaryTpLight: rgba(66, 74, 90, 0.8);
 $bgSecondary: white;
 $bgSecondaryLight: rgba(192, 255, 233, 0.3);
 $transitionSpeed: 600ms;
-$titleSize: 40px;
-$middleTitleSize: 30px;
-$postSize: 22px;
-$contentSize: 15px;
+$titleSize: 50px;
+$descSize: 30px;
+$phoneTitleSize: 35px;
+$phoneDescSize: 20px;
+$footerSize: 15px;
 $pageBgFirst: white;
 $pageBgSecond: #f8fadb;
+$logoColor: #40ac9c;
+
+$headerS: 18px;
+$headerL: 45px;
 
 $landingWordShadow: 0 0 7px
     map-get(

@@ -3,7 +3,6 @@ import { appWithTranslation } from 'next-i18next'
 import { Provider } from 'react-redux'
 import { PersistGate } from 'redux-persist/integration/react'
 import store, { persistor } from '@src/store/store'
-// import '@src/styles/global.css'
 import '@src/styles/main.css'
 
 function MyApp({ Component, pageProps }: AppProps) {

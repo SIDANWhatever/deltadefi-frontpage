@@ -1,4 +1,4 @@
-import { MediaIcons } from '../../components/LandingPage'
+import { MediaIcons } from '../../components/home/LandingPage'
 
 // Landing Page Session
 

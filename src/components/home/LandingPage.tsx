@@ -1,7 +1,7 @@
 import React from 'react'
-import { Media, landingPage, navBar } from '../assets/StaticContent'
-import { Discord, Twitter, LinkedIn } from '../assets/Landing/SocialMedias'
-import LinkButton from './Items/LinkButton'
+import { Media, landingPage, navBar } from '../../assets/StaticContent'
+import { Discord, Twitter, LinkedIn } from '../../assets/Landing/SocialMedias'
+import { LinkButton } from '../Items/LinkButton'
 
 export interface MediaIcons {
   [key: string]: JSX.Element

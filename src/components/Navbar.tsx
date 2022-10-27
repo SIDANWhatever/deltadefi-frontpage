@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { navBar } from '../assets/StaticContent'
 import { useEffect, useState } from 'react'
-import LinkButton from './Items/LinkButton'
+import { LinkButton } from './Items/LinkButton'
 
 const Navbar = () => {
   const [button, setButton] = useState(false)
