@@ -51,7 +51,6 @@
 
 .landing {
   background: linear-gradient(315deg, #f8fadb 0%, #cce8b5 25%, #ebebeb 75%, #f8fadb 100%);
-  width: 100%;
   height: 100vh;
   z-index: 0;
   display: flex;
@@ -209,7 +208,6 @@
 }
 
 .marketFigure {
-  width: 100%;
   height: 100vh;
   z-index: 0;
   display: flex;
@@ -341,7 +339,6 @@
 }
 
 .learning {
-  width: 100%;
   height: 100vh;
   z-index: 0;
   display: flex;
@@ -465,7 +462,6 @@
 }
 
 .milestones {
-  width: 100%;
   height: 100vh;
   z-index: 0;
   display: flex;
@@ -693,7 +689,6 @@
 }
 
 .community {
-  width: 100%;
   height: 100vh;
   z-index: 0;
   display: flex;
@@ -779,30 +774,6 @@ a {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-}
-
-.footer {
-  display: flex;
-  padding: 2rem 0;
-  justify-content: center;
-  align-items: center;
-  background: #282c34;
-  background-size: cover;
-  background-position: center;
-  color: white;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.logo {
-  display: flex;
-  height: 3rem;
-  width: 3rem;
-  margin-left: 0.5rem;
 }
 
 @media (prefers-color-scheme: dark) {
