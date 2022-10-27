@@ -1,6 +1,4 @@
 import type { NextPage } from 'next'
-import Image from 'next/image'
-import Logo from '../assets/Logo.png'
 import Navbar from '../components/Navbar'
 import LandingPage from '../components/home/LandingPage'
 // import BasicIntro from '../components/BasicIntro'
@@ -9,7 +7,7 @@ import { pageMetadata } from '@src/assets/StaticContent'
 import MarketFigure from '@src/components/home/MarketFigure'
 import Learning from '@src/components/home/Learning'
 import Milestones from '@src/components/home/Milestones'
-import Community from '@src/components/home/Community'
+// import Community from '@src/components/home/Community'
 import Footer from '@src/components/Footer'
 
 const Home: NextPage = () => {

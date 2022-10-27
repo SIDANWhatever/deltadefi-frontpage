@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Image, { StaticImageData } from 'next/image'
+// import Image, { StaticImageData } from 'next/image'
 
 interface LinkButtonProps {
   css: string
@@ -21,13 +21,13 @@ const LinkButton = ({ css, link, text }: LinkButtonProps) => {
   )
 }
 
-const IconButton = ({ Icon, css, link, text }: IconButtonProps) => {
-  return (
-    <div className={css}>
-      {/* <Icon /> */}
-      <Link href={link}>{text}</Link>
-    </div>
-  )
-}
+// const IconButton = ({ Icon, css, link, text }: IconButtonProps) => {
+//   return (
+//     <div className={css}>
+//       {/* <Icon /> */}
+//       <Link href={link}>{text}</Link>
+//     </div>
+//   )
+// }
 
-export { LinkButton, IconButton }
+export { LinkButton }
