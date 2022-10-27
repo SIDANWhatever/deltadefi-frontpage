@@ -6,12 +6,12 @@ interface LinkButtonProps {
   link: string
   text: string
 }
-interface IconButtonProps {
-  Icon: JSX.Element
-  css: string
-  link: string
-  text: string
-}
+// interface IconButtonProps {
+//   Icon: JSX.Element
+//   css: string
+//   link: string
+//   text: string
+// }
 
 const LinkButton = ({ css, link, text }: LinkButtonProps) => {
   return (
