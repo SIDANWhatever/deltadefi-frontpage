@@ -1,13 +1,13 @@
 import type { NextPage } from 'next'
-import Navbar from '../components/Navbar'
-import LandingPage from '../components/home/LandingPage'
-// import BasicIntro from '../components/BasicIntro'
+import Logo from '../assets/Logo.png'
+import { Navbar } from '../components/organisms/Navbar'
+import { navBar, pageMetadata } from '../assets/StaticContent'
+import LandingPage from '../components/pages/home/LandingPage'
 import Head from 'next/head'
-import { pageMetadata } from '@src/assets/StaticContent'
-import MarketFigure from '@src/components/home/MarketFigure'
-import Learning from '@src/components/home/Learning'
-import Milestones from '@src/components/home/Milestones'
-// import Community from '@src/components/home/Community'
+import MarketFigure from '@src/components/pages/home/MarketFigure'
+import Learning from '@src/components/pages/home/Learning'
+import Milestones from '@src/components/pages/home/Milestones'
+import Community from '@src/components/pages/home/Community'
 import Footer from '@src/components/Footer'
 
 const Home: NextPage = () => {
@@ -20,12 +20,12 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="main">
-        <Navbar />
+        <Navbar logo={Logo} navInfo={navBar} />
         <LandingPage />
         <MarketFigure />
         <Learning />
         <Milestones />
-        {/* <Community /> */}
+        <Community />
         {/* <BasicIntro /> */}
       </main>
       <Footer />

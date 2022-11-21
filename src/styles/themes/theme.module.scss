@@ -1,8 +1,0 @@
-@import '../abstracts/functions';
-@import '../abstracts/variables';
-
-@include exportComponentLevelVariables($mainColor);
-@include exportComponentLevelVariables($color);
-@include exportComponentLevelVariables($fontSize);
-@include exportComponentLevelVariables($fontWeight);
-@include exportComponentLevelVariables($mainStyle);

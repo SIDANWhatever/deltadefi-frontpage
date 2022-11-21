@@ -4,6 +4,6 @@ export interface PageMetadata {
 }
 
 export const pageMetadata: PageMetadata = {
-  title: "Example Page",
-  description: "This is an example page",
+  title: "DeltaDeFi",
+  description: "Decentralized Financial Protocol Built on Cardano",
 };

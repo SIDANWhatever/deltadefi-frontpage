@@ -1,6 +1,6 @@
 // Nav Bar Session
-
-export interface NavBarInterface {
+// import { NavbarInterface } from "../../components/organisms/Navbar"
+export interface NavbarInterface {
   projectName: NavItem
   items: NavItem[]
   launch: NavItem
@@ -11,7 +11,7 @@ export interface NavItem {
   link: string
 }
 
-export const navBar: NavBarInterface = {
+export const navBar: NavbarInterface = {
   projectName: { name: 'DeltaDeFi', link: '/' },
   items: [
     {
@@ -20,7 +20,7 @@ export const navBar: NavBarInterface = {
     },
     {
       name: 'Documentation',
-      link: '/'
+      link: 'https://docs.deltadefi.io/'
     }
   ],
   launch: {
